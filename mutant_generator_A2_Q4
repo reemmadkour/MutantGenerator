@@ -34,17 +34,18 @@ with open('mutantlib.txt') as my_file:
 
 		linewithog = linecache.getline('mutantlib.txt', linecountmutants+1)
 		ogchar= (linewithog[13:len(linewithog)])
-		print("original"+ ogchar)
-
+	
 		linewithmutant = linecache.getline('mutantlib.txt', linecountmutants+2)
 		mutant= (linewithmutant[5:len(linewithmutant)])
 
-		print(lineinProgram)
-		print("original char:"+ogchar)
-		lineinProgram=lineinProgram.replace(ogchar,mutant)
+		
+
+	
+		lineinProgram=lineinProgram.replace(str(ogchar[0]),str(mutant[0]))
+
+		
 		lineinProgram=lineinProgram.replace("\n","")+"\t#mutant\n"
-		print(lineinProgram)
-			
+
 
 		while(linecountprogram<=maxcountprogram):
 			if(linecountprogram==linenumber):
