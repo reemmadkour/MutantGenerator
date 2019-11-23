@@ -1,48 +1,48 @@
-Line number= 4
+Line number= 3
 Original exp:+
 Type:-
 --------------------------
-Line number= 4
+Line number= 3
 Original exp:+
 Type:/
 --------------------------
-Line number= 4
+Line number= 3
 Original exp:+
 Type:*
 --------------------------
-Line number= 5
+Line number= 4
 Original exp:-
 Type:+
 --------------------------
-Line number= 5
+Line number= 4
 Original exp:-
 Type:/
 --------------------------
-Line number= 5
+Line number= 4
 Original exp:-
 Type:*
 --------------------------
-Line number= 8
+Line number= 5
 Original exp:/
 Type:+
 --------------------------
-Line number= 8
+Line number= 5
 Original exp:/
 Type:-
 --------------------------
-Line number= 8
+Line number= 5
 Original exp:/
 Type:*
 --------------------------
-Line number= 9
+Line number= 6
 Original exp:*
 Type:+
 --------------------------
-Line number= 9
+Line number= 6
 Original exp:*
 Type:-
 --------------------------
-Line number= 9
+Line number= 6
 Original exp:*
 Type:/
 --------------------------

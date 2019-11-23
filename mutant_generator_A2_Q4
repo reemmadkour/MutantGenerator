@@ -15,19 +15,19 @@ with open('mutantlib.txt') as f2:
         pass
 maxcount= i + 1
 
-with open('program.txt') as f2:
+with open('program.py') as f2:
     for i, l in enumerate(f2):
         pass
 maxcountprogram= i + 1
 
 #assume mutant library is <1000 lines
 with open('mutantlib.txt') as my_file:
-	while(linecountmutants<(maxcount-7)):
-		f= open("newprogram"+str(count)+".txt","w+")
+	while(linecountmutants<(maxcount-6)):
+		f= open("newprogram"+str(count)+".py","w+")
 		count=count+1
 		linewithnumber = linecache.getline('mutantlib.txt', linecountmutants)
 		linenumber= int(linewithnumber[12:len(linewithnumber)])
-		lineinProgram=linecache.getline("program.txt", linenumber)
+		lineinProgram=linecache.getline("program.py", linenumber)
 		
 		
 
@@ -51,7 +51,7 @@ with open('mutantlib.txt') as my_file:
 			if(linecountprogram==linenumber):
 				f.write(lineinProgram)
 			else:
-				curLine=linecache.getline("program.txt", linecountprogram)
+				curLine=linecache.getline("program.py", linecountprogram)
 				f.write(curLine)
 			linecountprogram=linecountprogram+1
 
