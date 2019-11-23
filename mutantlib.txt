@@ -1,0 +1,52 @@
+Line number= 4
+Original exp:+
+Type:-
+--------------------------
+Line number= 4
+Original exp:+
+Type:/
+--------------------------
+Line number= 4
+Original exp:+
+Type:*
+--------------------------
+Line number= 5
+Original exp:-
+Type:+
+--------------------------
+Line number= 5
+Original exp:-
+Type:/
+--------------------------
+Line number= 5
+Original exp:-
+Type:*
+--------------------------
+Line number= 8
+Original exp:/
+Type:+
+--------------------------
+Line number= 8
+Original exp:/
+Type:-
+--------------------------
+Line number= 8
+Original exp:/
+Type:*
+--------------------------
+Line number= 9
+Original exp:*
+Type:+
+--------------------------
+Line number= 9
+Original exp:*
+Type:-
+--------------------------
+Line number= 9
+Original exp:*
+Type:/
+--------------------------
+Number of + mutants: 3
+Number of - mutants: 3
+Number of * mutants: 3
+Number of / mutants: 3

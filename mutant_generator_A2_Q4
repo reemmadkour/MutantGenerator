@@ -1,0 +1,60 @@
+import pandas as pd
+import linecache
+
+arr = ["+", "-","/","*"]
+
+mutants= open("mutantlib.txt","r+")
+
+linecountprogram=1;
+linecountmutants=1;
+count=1
+
+
+with open('mutantlib.txt') as f2:
+    for i, l in enumerate(f2):
+        pass
+maxcount= i + 1
+
+with open('program.txt') as f2:
+    for i, l in enumerate(f2):
+        pass
+maxcountprogram= i + 1
+
+#assume mutant library is <1000 lines
+with open('mutantlib.txt') as my_file:
+	while(linecountmutants<(maxcount-7)):
+		f= open("newprogram"+str(count)+".txt","w+")
+		count=count+1
+		linewithnumber = linecache.getline('mutantlib.txt', linecountmutants)
+		linenumber= int(linewithnumber[12:len(linewithnumber)])
+		lineinProgram=linecache.getline("program.txt", linenumber)
+		
+		
+
+
+		linewithog = linecache.getline('mutantlib.txt', linecountmutants+1)
+		ogchar= (linewithog[13:len(linewithog)])
+		print("original"+ ogchar)
+
+		linewithmutant = linecache.getline('mutantlib.txt', linecountmutants+2)
+		mutant= (linewithmutant[5:len(linewithmutant)])
+
+		print(lineinProgram)
+		print("original char:"+ogchar)
+		lineinProgram=lineinProgram.replace(ogchar,mutant)
+		lineinProgram=lineinProgram.replace("\n","")+"\t#mutant\n"
+		print(lineinProgram)
+			
+
+		while(linecountprogram<=maxcountprogram):
+			if(linecountprogram==linenumber):
+				f.write(lineinProgram)
+			else:
+				curLine=linecache.getline("program.txt", linecountprogram)
+				f.write(curLine)
+			linecountprogram=linecountprogram+1
+
+		linecountmutants=linecountmutants+4
+		linecountprogram=1
+	
+		
