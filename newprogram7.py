@@ -2,7 +2,7 @@ import sys
 b = int(sys.argv[1])
 a = b+2
 b = a-1
-c = b/2
+c = b+2	#mutant
 d = a*b
 arr=list()
 arr.append(a)

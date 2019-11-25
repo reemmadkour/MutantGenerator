@@ -1,6 +1,6 @@
 import sys
 b = int(sys.argv[1])
-a = b+2
+a = b-2	#mutant
 b = a-1
 c = b/2
 d = a*b

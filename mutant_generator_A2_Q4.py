@@ -28,6 +28,9 @@ with open('mutantlib.txt') as my_file:
 		linewithnumber = linecache.getline('mutantlib.txt', linecountmutants)
 		linenumber= int(linewithnumber[12:len(linewithnumber)])
 		lineinProgram=linecache.getline("program.py", linenumber)
+		
+		
+
 
 		linewithog = linecache.getline('mutantlib.txt', linecountmutants+1)
 		ogchar= (linewithog[13:len(linewithog)])

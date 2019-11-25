@@ -1,7 +1,7 @@
 import sys
 b = int(sys.argv[1])
 a = b+2
-b = a-1
+b = a/1	#mutant
 c = b/2
 d = a*b
 arr=list()

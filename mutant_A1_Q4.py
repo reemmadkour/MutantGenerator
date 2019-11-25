@@ -7,7 +7,7 @@ numMutantplus=0;
 numMutantminus=0;
 numMutantmultp=0;
 numMutantdiv=0;
-with open('program.txt') as my_file:
+with open('program.py') as my_file:
 	for line in my_file:
 		linecount=linecount+1
 		for x in arr :
